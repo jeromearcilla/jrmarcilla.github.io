@@ -1,0 +1,63 @@
+       * {
+            box-sizing: border-box;
+        }
+
+        img {
+            filter: grayscale(100%);
+        }
+
+        body {
+            margin-top: 45;
+            margin-bottom: 15;
+            background: #ff4d4d;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .slideshow-container {
+            max-width: 450px;
+            position: relative;
+            margin: auto;
+        }
+
+
+        .text_one {
+            top: 92.5%;
+            color: #ff9966;
+            font-family: Bahnschrift;
+            font-size: 23px;
+            padding: 8px 18px;
+            position: absolute;
+            width: 100%;
+            text-align: right;
+        }
+
+        .text_two {
+            letter-spacing: 4px;
+            top: 4%;
+            color: #e6e6e6;
+            font-family: Bahnschrift;
+            font-size: 18px;
+            padding: 8px 35px;
+            position: absolute;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .text_four {
+            letter-spacing: 2px;
+            top: 82%;
+            color: #e6e6e6;
+            font-family: Bahnschrift;
+            font-size: 15px;
+            padding: 8px 18px;
+            position: absolute;
+            width: 65%;
+            text-align: justify;
+        }
+
+
+
+

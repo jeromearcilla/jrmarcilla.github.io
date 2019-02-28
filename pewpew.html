@@ -1,0 +1,94 @@
+<html>
+
+<head>
+
+    <title> LBYEC2A: Project </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="alpha.css">
+
+</head>
+
+<body>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="wave.JPG" style="width:100%">
+            <a href="1_43.html">
+                <div class="text_one">1 : 4 3</div>
+            </a>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="tree.JPG" style="width:100%">
+            <a href="https://itunes.apple.com/ph/album/breathin/1399202539?i=1399202958">
+                <div class="text">B R E A T H E .</div>
+            </a>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="window.JPG" style="width:100%">
+            <a href="passion.html">
+                <div class="text">P A S S I O N.</div>
+            </a>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="traffic.JPG" style="width:100%">
+            <a href="https://itunes.apple.com/ph/album/thursday-feat-h-e-r-single/1449622934">
+                <div class="text">E N O U G H.</div>
+            </a>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="lake.JPG" style="width:100%">
+            <a href="change.html">
+            <div class="text">C H A N G E.</div>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+</body>
+
+
+
+</html>
